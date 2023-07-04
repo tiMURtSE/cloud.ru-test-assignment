@@ -1,0 +1,16 @@
+.btn {
+	padding: 12px 16px;
+
+	background-color: var(--color-blue);
+	color: #fff;
+	border: 2px solid var(--color-blue);
+	border-radius: var(--border-radius-small);
+	cursor: pointer;
+
+	font: inherit;
+}
+
+.white {
+	background-color: #fff;
+	color: var(--color-blue);
+}

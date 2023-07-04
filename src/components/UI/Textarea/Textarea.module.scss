@@ -1,0 +1,37 @@
+.label {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.textarea__wrapper {
+	position: relative;
+	display: inline-block;
+}
+
+.textarea {
+	width: 100%;
+	min-height: 84px;
+	max-height: 250px;
+	padding: 12px;
+
+	border: 1px solid var(--color-black-alpha-16);
+	border-radius: var(--border-radius-small);
+
+	font: inherit;
+	resize: vertical;
+}
+
+.counter {
+	position: absolute;
+	top: 100%;
+	left: 100%;
+	z-index: 10;
+	transform: translateX(-100%);
+	width: max-content;
+}
+
+.tip {
+	font-size: 12px;
+	color: var(--color-danger);
+}

@@ -1,0 +1,74 @@
+.modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 460px;
+	padding: 32px;
+
+	border: none;
+	background-color: #fff;
+	border-radius: var(--border-radius-large);
+	box-shadow: 0px 8px 32px var(--color-transparent-black);
+}
+
+.inner-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 48px;
+}
+
+.first-row {
+	align-self: stretch;
+	display: flex;
+	justify-content: space-between;
+}
+
+.label {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.background-circle {
+	position: relative;
+	width: 80px;
+	height: 80px;
+
+	background-color: var(--color-transparent-black);
+	border-radius: 50%;
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		z-index: 10;
+		transform: translate(-50%, -50%);
+		width: 37px;
+		height: 37px;
+
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+}
+
+.success {
+	background-color: var(--color-light-green);
+
+	&::after {
+		background-image: url("/success-mark.svg");
+	}
+}
+
+.error {
+	background-color: var(--color-light-red);
+
+	&::after {
+		background-image: url("/error-mark.svg");
+	}
+}
+
+.right-side {
+	align-self: flex-end;
+}

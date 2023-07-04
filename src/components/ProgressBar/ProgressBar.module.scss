@@ -1,0 +1,104 @@
+.wrapper {
+	position: relative;
+	display: flex;
+}
+
+.bar {
+	flex-basis: 50%;
+	height: 8px;
+
+	border-radius: var(--border-radius-regular);
+}
+
+.first-bar {
+	background-color: var(--color-black-alpha-8);
+}
+
+.second-bar {
+	background-color: var(--color-black-alpha-8);
+}
+
+.circle {
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	transform: translateY(-50%);
+
+	width: 16px;
+	height: 16px;
+
+	background-color: var(--color-grey-350);
+	border-radius: 50%;
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 28px;
+		left: 50%;
+		z-index: 20;
+		transform: translateX(-50%);
+
+		color: #666666;
+	}
+}
+
+.first-circle {
+	left: 0;
+
+	&::after {
+		content: "1";
+	}
+}
+
+.second-circle {
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	&:after {
+		content: "2";
+	}
+}
+.third-circle {
+	left: 100%;
+	transform: translate(-50%, -50%);
+
+	&::after {
+		content: "3";
+	}
+}
+
+.filled {
+	background-color: var(--color-blue);
+}
+
+.completed {
+	background-color: var(--color-blue);
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		z-index: 10;
+		width: 9px;
+		height: 9px;
+		transform: translate(-50%, -50%);
+
+		background-image: url("/check-mark.svg");
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	&::after {
+		color: var(--color-blue);
+	}
+}
+
+.active {
+	border: 6px solid var(--color-blue);
+	background-color: #fff;
+
+	&::after {
+		color: var(--color-blue);
+	}
+}

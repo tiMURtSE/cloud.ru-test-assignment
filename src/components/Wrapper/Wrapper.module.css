@@ -1,0 +1,13 @@
+.wrapper {
+	width: 900px;
+	margin: 0 auto;
+	padding: 66px 110px 80px 110px;
+
+	background-color: #fff;
+	border-radius: var(--border-radius-extra-large);
+}
+
+.main {
+	height: 704px;
+	padding: 24px;
+}

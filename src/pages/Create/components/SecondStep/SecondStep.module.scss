@@ -1,0 +1,27 @@
+.inner {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+
+	margin-bottom: 66px;
+}
+
+.checkbox__item {
+	display: inline-flex;
+	gap: 1rem;
+
+	cursor: pointer;
+}
+
+.checkboxes {
+	border: none;
+}
+
+.checkboxes legend {
+	margin-bottom: 1rem;
+}
+
+.buttons {
+	display: flex;
+	justify-content: space-between;
+}
