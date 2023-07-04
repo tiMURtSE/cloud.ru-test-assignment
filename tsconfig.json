@@ -28,7 +28,7 @@
 			"@styles/*": ["src/styles/*"],
 			"@hooks/*": ["src/hooks/*"],
 			"@consts/*": ["src/consts/*"],
-			"@store/*": ["src/store/*"]
+			"@store/*": ["src/store/*"],
 			"@api/*": ["src/api/*"]
 		}
 	},
